@@ -1,0 +1,20 @@
+{{ define "index" }}
+
+{{ template "header"}}
+
+<main class="px-3">
+    <h1>Главная страница</h1>
+    <p class="lead"><p>Пользователь: {{ .Name }}<br>Возраст: {{ .Age }}<br>Деньги: {{ .Money }} </p>
+    <p class="lead">Using Lorem ipsum to focus attention on graphic elements in a webpage design proposal. 
+      One of the earliest examples of the Lorem ipsum placeholder text on 1960s advertising. 
+      In publishing and graphic design, Lorem ipsum (/ˌlɔː.rəm ˈɪp.səm/) is a placeholder text commonly
+       used to demonstrate the visual form of a document or a typeface without relying on meaningful content. 
+       Lorem ipsum may be used as a placeholder before the final copy is available.</p>
+
+    <p class="lead">
+      <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white">Узнать больше</a>
+    </p>
+  </main>
+
+{{ template "footer"}}
+{{ end }}
