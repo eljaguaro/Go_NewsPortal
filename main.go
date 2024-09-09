@@ -25,7 +25,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		fmt.Fprintf(w, err.Error())
 	}
-	db, err := sql.Open("postgres", fmt.Sprintf("host='localhost' port=5432 user='postgres2' password='David2004' dbname='ddd' sslmode=disable"))
+	db, err := sql.Open("postgres", fmt.Sprintf("host=host port=5432 user=user password=password dbname=dbname sslmode=disable"))
 	if err != nil {
 		log.Fatal(err.Error())
 	}
@@ -65,7 +65,7 @@ func save_article(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "Не все данные заполнены")
 	} else {
 
-		db, err := sql.Open("postgres", fmt.Sprintf("host='localhost' port=5432 user='postgres2' password='David2004' dbname='ddd' sslmode=disable"))
+		db, err := sql.Open("postgres", fmt.Sprintf("host=host port=5432 user=user password=password dbname=dbname sslmode=disable"))
 		if err != nil {
 			log.Fatal(err.Error())
 		}
@@ -87,7 +87,7 @@ func show_post(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, err.Error())
 	}
 
-	db, err := sql.Open("postgres", fmt.Sprintf("host='localhost' port=5432 user='postgres2' password='David2004' dbname='ddd' sslmode=disable"))
+	db, err := sql.Open("postgres", fmt.Sprintf("host=host port=5432 user=user password=password dbname=dbname sslmode=disable"))
 	if err != nil {
 		log.Fatal(err.Error())
 	}
